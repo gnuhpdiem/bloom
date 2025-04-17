@@ -1,0 +1,149 @@
+/* hero */
+.body_home {
+    background-color: var(--background);
+    padding-top: 30px;
+  }
+
+.hero-section {
+    min-height: 60vh;
+}
+
+.hero-section .container-fluid {
+    position: relative;
+    text-align: center;
+    background-color: var(--primary);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/bloom/assets/img/flowers-174817_1280.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--primary-1);
+    background-size: cover;
+}
+
+.hero_span {
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+.hero-content {
+    padding: 110px;
+}
+
+.hero-content h2 {
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.hero-content .container-hero p {
+    max-width: 60rem;
+    margin: 0 auto 1rem auto;
+    line-height: 2;
+    font-size: 1.7rem;
+    color: #fff;
+}
+
+/* loại sản phẩm */
+.lsp_section {
+    margin: 100px;
+    padding: 0 35px;
+}
+
+.lsp {
+    display: flex;
+    height: 20rem;
+    gap: 1rem;
+}
+
+.lsp > div {
+    flex: 1;
+    position: relative;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+}
+
+.img_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    opacity: 0; /* hide the overlay */
+    transition: opacity 0.25s;
+    .lsp_ten {
+        display: none;
+    }
+}
+
+.img_overlay > * {
+    transition: all 0.25s;
+}
+
+.img_overlay--blur {
+    backdrop-filter: blur(2px);
+}
+
+.lsp > div:hover {
+    flex: 5;
+    .img_overlay {
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .lsp_ten {
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+        }
+    }
+}
+
+/* products */
+
+.sp_section {
+    margin: 100px;
+    padding: 0 35px;
+}
+
+.sp_row {
+    margin-top: 100px;
+}
+
+.card-img-top, .car_sp_img {
+    /* padding: 20px; */
+    width: 210px;
+    height: 210px;
+    object-fit: cover;
+}
+.image {
+    border-radius: 40px;
+    box-shadow: 0px 4px 4px 0px var(--primary-1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.card-body {
+    padding: 25px;
+    margin-top: -15px;
+}
+
+.card_sp {
+    list-style: none;
+    width: 290px;
+    height: 100%;
+    background-color: var(--primary-1-20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+} 
+
